@@ -5,14 +5,14 @@ Keep in mind that you have a limited amount of time to complete the implementati
 
 ### Project Proposal
 A project proposal (limit 5 pages) that provides the following information should be submitted on or before September 2:
-- [ ]  __Description__ - An overall description of the application that outlines its purpose, scope and target users.
-- [ ]  __Functionality__ – an itemized list (accompanied by a brief description) of the different functionalities that the application will offer.
+- [x]  __Description__ - An overall description of the application that outlines its purpose, scope and target users.
+- [x]  __Functionality__ – an itemized list (accompanied by a brief description) of the different functionalities that the application will offer.
 - [ ]  __Business Rules__ – a preliminary list of the rules that will govern your application.
 - [ ]  __Assumptions__ – assumptions (if any) that you have made about who will use your application and how they will use it.
-- [ ]  __Web Pages__ – a preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included.
+- [x]  __Web Pages__ – a preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included.
 - [ ]  __Validation__ – a preliminary list of the validation checks that will be performed on input data.
 - [ ]  __Database Schema__ – a preliminary list of normalized tables that will be required to support your application. For each table, its fields (name, data type and description) should be provided. Primary and foreign keys should also be clearly identified.
-- [ ]  __Model Sites__: A list of two to four existing sites on the Web that you plan to use as models for your
+- [x]  __Model Sites__: A list of two to four existing sites on the Web that you plan to use as models for your
 application.
 - [ ]  __Database Details__: a name for your database, and a username and password (simple and weak).
 

@@ -12,25 +12,25 @@ Our website will be a support ticketing system that can be used for a variety of
 - Administrator: Assign and track tickets by status (Open, In Progress, Resolved, etc.).
 
 ## Business Rules
-A preliminary list of the rules that will govern your application.
+_A preliminary list of the rules that will govern your application._
 
 ## Assumptions
-Assumptions (if any) that you have made about who will use your application and how they will use it.
+_Assumptions (if any) that you have made about who will use your application and how they will use it._
 
 ## Web Pages
-A preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included.
+_A preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included._
 
 ## Validation
-A preliminary list of the validation checks that will be performed on input data.
+_A preliminary list of the validation checks that will be performed on input data._
 
 ## Database Schema
-A preliminary list of normalized tables that will be required to support your application. For each table, its fields (name, data type and description) should be provided. Primary and foreign keys should also be clearly identified.
+_A preliminary list of normalized tables that will be required to support your application. For each table, its fields (name, data type and description) should be provided. Primary and foreign keys should also be clearly identified._
 
 ## Model Sites
-- GitHub.com
-- Waffle.io
-- Trac
-- Travis-CI.org
+- [GitHub.com] (https://github.com)
+- [Waffle.io] (https://waffle.io)
+- [Trac] (http://trac.edgewall.org)
+- [Travis CI] (https://travis-ci.org)
 
 ## Database Details
-A name for your database, and a username and password (simple and weak).
+_A name for your database, and a username and password (simple and weak)._

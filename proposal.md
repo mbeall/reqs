@@ -1,6 +1,6 @@
 # Project Proposal
 ## Description
-Our website will be a support ticketing system that can be used for a variety of software, projects and organizations. While the project may expand in the future, there will be two basic types of users of the website: administrators and customers. Customers will be able to submit issues and feature requests for software and other projects without needing to create an account. Instead, they will verify which software/project/organization they are submitting a ticket for via a unique URL or some other method. Administrators will be able to login and moderate tickets, assigning tags, priorities, and support staff to them.
+Our website will be a support ticketing system that can be used for a variety of software, projects and organizations. While the project may expand in the future, there will be two basic types of users of the website: administrators and customers. Customers will be able to submit issues and feature requests for software and other projects without needing to create an account. Instead, they will verify which software/project/organization they are submitting a ticket for via a unique URL or some other method. Administrators will be able to login and moderate tickets, assigning tags, priorities, and support staff to them. If the customer supplies contact information, an administrator will be able to follow-up with them regarding the ticket they submitted.
 
 ## Functionality
 - Customer: Submit a ticket for a problem encountered with the software, project, or organization.
@@ -24,6 +24,11 @@ _Assumptions (if any) that you have made about who will use your application and
 - Not all customers wish to be followed up with.
 - Ticket moderation, management, and customer support should be easy to manage for administrators.
 - A system that is not cumbersome for customers AND not cumbersome for administrators IS POSSIBLE.
+- The customer knows how to navigate the website.
+- A user is an employee or customer of the particular organization that owns the project.
+- The customer has a specific goal for their visit to the website.
+- The customer is comfortable entering basic information on the website.
+- The customer is comfortable with the website tracking their IP address and other identifying information.
 
 ## Web Pages
 _A preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included._

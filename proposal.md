@@ -13,6 +13,7 @@ Our website will be a support ticketing system that can be used for a variety of
 
 ## Business Rules
 _A preliminary list of the rules that will govern your application._
+- Administrators can only access projects that they create or have been invited to administer.
 
 ## Assumptions
 _Assumptions (if any) that you have made about who will use your application and how they will use it._

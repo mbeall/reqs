@@ -5,3 +5,10 @@ _This is a repository of ideas, good, bad, and ugly. Even if they are rejected, 
  - Knowledge Base
  - Support Forums
  - Other Tickets
+- User Levels
+ - Site Administrator
+ - Team Leader
+ - Project Leader
+ - Moderator
+ - Power User
+ - Registered User

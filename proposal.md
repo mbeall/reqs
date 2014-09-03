@@ -14,9 +14,16 @@ Our website will be a support ticketing system that can be used for a variety of
 ## Business Rules
 _A preliminary list of the rules that will govern your application._
 - Administrators can only access projects that they create or have been invited to administer.
+- Customers will be encouraged to register, or at least provide their name and email address, but it is not required.
+- Unregistered users' activity will be logged under their IP Address.
+- Unregistered users will only be able to submit x amount of tickets in a 24-hour period.
 
 ## Assumptions
 _Assumptions (if any) that you have made about who will use your application and how they will use it._
+- Submitting a ticket needs to be as simple as possible for the customer, requiring the smallest amount of information possible.
+- Not all customers wish to be followed up with.
+- Ticket moderation, management, and customer support should be easy to manage for administrators.
+- A system that is not cumbersome for customers AND not cumbersome for administrators IS POSSIBLE.
 
 ## Web Pages
 _A preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included._
@@ -41,10 +48,10 @@ For any user not logged in, the project page will display a search field and a b
 #### Ticket View
 An individual ticket is displayed with status, tags, priority and assigned administrator information.
 
-Note: This is NOT an exhaustive list.
-
 ## Validation
 _A preliminary list of the validation checks that will be performed on input data._
+- Customers will be required to answer a math or CAPTCHA problem to verify that they are human.
+- Customers who have blocked accounts or IP Address(es) will not be able to submit a ticket.
 
 ## Database Schema
 _A preliminary list of normalized tables that will be required to support your application. For each table, its fields (name, data type and description) should be provided. Primary and foreign keys should also be clearly identified._

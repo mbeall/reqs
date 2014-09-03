@@ -12,3 +12,4 @@ _This is a repository of ideas, good, bad, and ugly. Even if they are rejected, 
  - Moderator
  - Power User
  - Registered User
+ - Unregistered User

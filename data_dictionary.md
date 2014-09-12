@@ -25,15 +25,33 @@ _Table and column information for the database._
 |---              |---           |--- |--- |--- |--- |---          |
 | team_id         | INT          | X  | X  |    |    | Unique identifier for each team; automatically generated. |
 | team_owner_id   | INT          |    | X  |    | X  | The owner or administrator of the team: references `users.user_id`. |
-| team_name       | VARCHAR(32)  |    | X  |    |    | A team's name. |
+| team_name       | VARCHAR(32)  |    | X  | X  |    | A team's name. |
 | team_desc       | VARCHAR(255) |    |    |    |    | A description of the team. |
 
 ## team_members
 
 | Column         | Datatype     | PK | RQ | UQ | FK | Description |
 |---             |---           |--- |--- |--- |--- |---          |
-| team_member_id | INT          | X  | X  |    |    | Randomly generated number that identifies team membership. |
+| team_member_id | INT          | X  | X  |    |    | Unique identifier for team membership; automatically generated. |
 | team_id        | INT          |    | X  |    | X  | The team that a user is a member of: references `teams.team_id`.  |
 | user_id        | INT          |    | X  |    | X  | The user that is a member of a team: references `users.user_id`. |
-| user_role      | VARCHAR(32)  |    | X  |    |    | A user's role on the team. (i.e. team lead, team member, etc.) |
+| user_role      | VARCHAR(32)  |    | X  |    |    | A user's role on the team (i.e. team lead, etc.); default is `'member'`. |
+
+## projects
+
+| Column          | Datatype     | PK | RQ | UQ | FK | Description |
+|---              |---           |--- |--- |--- |--- |---          |
+| project_id      | INT          | X  | X  |    |    | Unique identifier for a project; automatically generated. |
+| project_team_id | INT          |    | X  |    | X  | The team that owns the project: references `teams.team_id`. |
+| project_name    | VARCHAR(32)  |    | X  | X  |    | A project's name.  |
+| project_desc    | VARCHAR(255) |    |    |    |    | A description of the project. |
+
+## project_users
+
+| Column          | Datatype     | PK | RQ | UQ | FK | Description |
+|---              |---           |--- |--- |--- |--- |---          |
+| project_user_id | INT          | X  | X  |    |    | Unique identifier for project participants; automatically generated. |
+| project_id      | INT          |    | X  |    | X  | The project that a user is participating in: references `projects.project_id`.  |
+| user_id         | INT          |    | X  |    | X  | The user that is a participant in the project: references `users.user_id`. |
+| user_role       | VARCHAR(32)  |    | X  |    |    | A user's role on the project (i.e. project lead, etc.); default is `'moderator'`. |
 

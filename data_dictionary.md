@@ -24,7 +24,7 @@ _Table and column information for the database._
 | Column    | Datatype     | PK | RQ | UQ | FK | Description |
 |---        |---           |--- |--- |--- |--- |---          |
 | team_id   | INT          | X  | X  |    |    | Unique identifier for each team; automatically generated. |
-| user_id   | INT          |    | X  |    | X  | The owner or administrator of the team: references `users.user_id`. |
+| user_id   | INT          |    | X  |    | X  | The owner or administrator of the team: references `reg_users.user_id`. |
 | team_name | VARCHAR(32)  |    | X  | X  |    | A team's name. |
 | team_desc | VARCHAR(255) |    |    |    |    | A description of the team. |
 
@@ -34,7 +34,7 @@ _Table and column information for the database._
 |---             |---           |--- |--- |--- |--- |---          |
 | team_member_id | INT          | X  | X  |    |    | Unique identifier for team membership; automatically generated. |
 | team_id        | INT          |    | X  |    | X  | The team that a user is a member of: references `teams.team_id`.  |
-| user_id        | INT          |    | X  |    | X  | The user that is a member of a team: references `users.user_id`. |
+| user_id        | INT          |    | X  |    | X  | The user that is a member of a team: references `reg_users.user_id`. |
 | user_role      | VARCHAR(32)  |    | X  |    |    | A user's role on the team (i.e. team lead, etc.); default is `'member'`. |
 
 ## projects
@@ -52,7 +52,7 @@ _Table and column information for the database._
 |---              |---           |--- |--- |--- |--- |---          |
 | project_user_id | INT          | X  | X  |    |    | Unique identifier for project participation; automatically generated. |
 | project_id      | INT          |    | X  |    | X  | The project that a user is participating in: references `projects.project_id`.  |
-| user_id         | INT          |    | X  |    | X  | The user that is participating in the project: references `users.user_id`. |
+| user_id         | INT          |    | X  |    | X  | The user that is participating in the project: references `reg_users.user_id`. |
 | user_role       | VARCHAR(32)  |    | X  |    |    | A user's role on the project (i.e. project lead, etc.); default is `'moderator'`. |
 
 ## tickets
@@ -62,7 +62,7 @@ _Table and column information for the database._
 | ticket_id       | INT          | X  | X  |    |    | Unique identifier for a ticket; automatically generated. |
 | project_id      | INT          |    | X  |    | X  | The project that the ticket belongs to: references `projects.project_id`. |
 | user_id         | INT          |    | X  |    | X  | The user that opens the ticket: references `users.user_id`. |
-| admin_id        | INT          |    |    |    | X  | The user that is responsible for resolving the ticket: references `users.user_id`.  |
+| admin_id        | INT          |    |    |    | X  | The user that is responsible for resolving the ticket: references `reg_users.user_id`.  |
 | ticket_name     | VARCHAR(32)  |    | X  | X  |    | A ticket's name or title. |
 | ticket_desc     | VARCHAR(255) |    |    |    |    | A description of the ticket. |
 | ticket_priority | VARCHAR(8)   |    |    |    |    | The priority for the ticket (i.e. High, Medium, Low) |

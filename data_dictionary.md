@@ -63,8 +63,8 @@ _Table and column information for the database._
 | admin_id        | INT          |    |    |    | X  | The user that is responsible for resolving the ticket: references `reg_users.user_id`.  |
 | ticket_name     | VARCHAR(32)  |    | X  | X  |    | A ticket's name or title. |
 | ticket_desc     | VARCHAR(255) |    |    |    |    | A description of the ticket. |
-| ticket_priority | VARCHAR(8)   |    |    |    |    | The priority for the ticket (i.e. High, Medium, Low) |
-| ticket_status   | VARCHAR(8)   |    |    |    |    | The status of a ticket (i.e. Open, Closed, In Progress) |
+| ticket_priority | VARCHAR(8)   |    |    |    |    | The priority for the ticket (i.e. High, Medium, Low): default is `normal`. |
+| ticket_status   | VARCHAR(8)   |    |    |    |    | The status of a ticket (i.e. Open, Closed, In Progress): default is `open`. |
 
 ## tags
 

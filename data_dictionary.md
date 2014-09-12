@@ -32,9 +32,8 @@ _Table and column information for the database._
 
 | Column         | Datatype     | PK | RQ | UQ | FK | Description |
 |---             |---           |--- |--- |--- |--- |---          |
-| team_member_id | INT          | X  | X  |    |    | Unique identifier for team membership; automatically generated. |
-| team_id        | INT          |    | X  |    | X  | The team that a user is a member of: references `teams.team_id`.  |
-| user_id        | INT          |    | X  |    | X  | The user that is a member of a team: references `reg_users.user_id`. |
+| team_id        | INT          | X  | X  |    | X  | The team that a user is a member of: references `teams.team_id`.  |
+| user_id        | INT          | X  | X  |    | X  | The user that is a member of a team: references `reg_users.user_id`. |
 | user_role      | VARCHAR(32)  |    | X  |    |    | A user's role on the team (i.e. team lead, etc.); default is `'member'`. |
 
 ## projects
@@ -50,9 +49,8 @@ _Table and column information for the database._
 
 | Column          | Datatype     | PK | RQ | UQ | FK | Description |
 |---              |---           |--- |--- |--- |--- |---          |
-| project_user_id | INT          | X  | X  |    |    | Unique identifier for project participation; automatically generated. |
-| project_id      | INT          |    | X  |    | X  | The project that a user is participating in: references `projects.project_id`.  |
-| user_id         | INT          |    | X  |    | X  | The user that is participating in the project: references `reg_users.user_id`. |
+| project_id      | INT          | X  | X  |    | X  | The project that a user is participating in: references `projects.project_id`.  |
+| user_id         | INT          | X  | X  |    | X  | The user that is participating in the project: references `reg_users.user_id`. |
 | user_role       | VARCHAR(32)  |    | X  |    |    | A user's role on the project (i.e. project lead, etc.); default is `'moderator'`. |
 
 ## tickets
@@ -81,6 +79,5 @@ _Table and column information for the database._
 
 | Column        | Datatype     | PK | RQ | UQ | FK | Description |
 |---            |---           |--- |--- |--- |--- |---          |
-| ticket_tag_id | INT          | X  | X  |    |    | Unique identifier for tag/ticket relationships; automatically generated. |
-| ticket_id     | INT          |    | X  |    | X  | The ticket being tagged: references `tickets.ticket_id`.  |
-| tag_id        | INT          |    | X  |    | X  | The tag applied to a ticket: references `tags.tag_id`. |
+| ticket_id     | INT          | X  | X  |    | X  | The ticket being tagged: references `tickets.ticket_id`.  |
+| tag_id        | INT          | X  | X  |    | X  | The tag applied to a ticket: references `tags.tag_id`. |

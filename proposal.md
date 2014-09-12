@@ -1,37 +1,36 @@
 # Project Proposal
 ## Description
-Our website will be a support ticketing system that can be used for a variety of software, projects and organizations. While the project may expand in the future, there will be two basic types of users of the website: administrators and customers. Customers will be able to submit issues and feature requests for software and other projects without needing to create an account. Instead, they will verify which software/project/organization they are submitting a ticket for via a unique URL or some other method. Administrators will be able to login and moderate tickets, assigning tags, priorities, and support staff to them. If the customer supplies contact information, an administrator will be able to follow-up with them regarding the ticket they submitted.
+Our website will be a support ticketing system that can be used for a variety of software, projects and organizations. While the project may expand in the future, there will be two basic types of users of the website: administrators and customers. Customers will be able to submit issues and feature requests for software and other projects without needing to create an account. Instead, they will verify which software/project/organization they are submitting a ticket for via a unique URL. Administrators will be able to login and moderate tickets, assigning tags, priorities, and support staff to them.
 
 ## Functionality
 - Customer: Submit a ticket for a problem encountered with the software, project, or organization.
 - Customer: Submit a feature request for the software, project, or organization.
 - Customer: Submit a screenshot to help administrators replicate an issue.
+- Customer: Search for open tickets.
 - Administrator: Assign tickets to other administrators on the same software, project, or organization team.
-- Administrator: Assign tickets a priority (High, Medium, Low).
+- Administrator: Assign tickets a priority (High, Medium, and Low).
 - Administrator: Assign tickets a custom tag (i.e. css, js, docs, examples, etc.).
 - Administrator: Assign and track tickets by status (Open, In Progress, Resolved, etc.).
 
 ## Business Rules
-_A preliminary list of the rules that will govern your application._
 - Administrators can only access projects that they create or have been invited to administer.
 - Customers will be encouraged to register, or at least provide their name and email address, but it is not required.
 - Unregistered users' activity will be logged under their IP Address.
 - Unregistered users will only be able to submit x amount of tickets in a 24-hour period.
 
 ## Assumptions
-_Assumptions (if any) that you have made about who will use your application and how they will use it._
 - Submitting a ticket needs to be as simple as possible for the customer, requiring the smallest amount of information possible.
 - Not all customers wish to be followed up with.
 - Ticket moderation, management, and customer support should be easy to manage for administrators.
 - A system that is not cumbersome for customers AND not cumbersome for administrators IS POSSIBLE.
-- The customer knows how to navigate the website.
-- A user is an employee or customer of the particular organization that owns the project.
-- The customer has a specific goal for their visit to the website.
+- The customer knows how to navigate a website.
+- The customer will be affiliated with the company.
+- The customer has a goal in mind for what they are looking for.
 - The customer is comfortable entering basic information on the website.
 - The customer is comfortable with the website tracking their IP address and other identifying information.
 
 ## Web Pages
-_A preliminary list of web pages. For each page, a brief description of its purpose and a written or graphic representation of its layout and contents. The proposed flow among the pages should also be included._
+
 #### Home
 On the home page will be a brief introduction to what the website/application does and will have an area to login for administrators. There will also be a link to the About and Contact pages, and the option to search for a user, project, or organization.
 
@@ -53,13 +52,18 @@ For any user not logged in, the project page will display a search field and a b
 #### Ticket View
 An individual ticket is displayed with status, tags, priority and assigned administrator information.
 
+The flow of the website will follow the order from above.
+
 ## Validation
-_A preliminary list of the validation checks that will be performed on input data._
 - Customers will be required to answer a math or CAPTCHA problem to verify that they are human.
 - Customers who have blocked accounts or IP Address(es) will not be able to submit a ticket.
+- Each ticket will have requirements that need to be filled out before it can be submitted. 
+- Spell check will be built into the website.
+- The website will check each field has the correct data type entered.
 
 ## Database Schema
-_A preliminary list of normalized tables that will be required to support your application. For each table, its fields (name, data type and description) should be provided. Primary and foreign keys should also be clearly identified._
+- [Database Diagram] (https://github.com/c410echo/reqs/blob/master/c410ed.png)
+- [Data Dictionary] (https://github.com/c410echo/reqs/blob/master/data_dictionary.md)
 
 ## Model Sites
 - [GitHub.com] (https://github.com)
@@ -68,4 +72,4 @@ _A preliminary list of normalized tables that will be required to support your a
 - [Travis CI] (https://travis-ci.org)
 
 ## Database Details
-_A name for your database, and a username and password (simple and weak)._
+_This information will not available on GitHub_

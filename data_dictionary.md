@@ -72,8 +72,8 @@ _Table and column information for the database._
 |---        |---           |--- |--- |--- |--- |---          |
 | tag_id    | INT          | X  | X  |    |    | Unique identifier for a ticket; automatically generated. |
 | tag_name  | VARCHAR(32)  |    | X  |    |    | A tag name. |
-| tag_color | VARCHAR(6)   |    |    |    |    | The text color used for the tag: default is `ffffff`. |
-| tag_bg    | VARCHAR(6)   |    |    |    |    | The background color used for the tag: default is `777777`. |
+| tag_color | VARCHAR(6)   |    | X  |    |    | The text color used for the tag: default is `ffffff`. |
+| tag_bg    | VARCHAR(6)   |    | X  |    |    | The background color used for the tag: default is `777777`. |
 
 ## ticket_tags
 

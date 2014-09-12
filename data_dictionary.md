@@ -6,7 +6,7 @@ _Table and column information for the database._
 | Column  | Datatype    | PK | RQ | UQ | FK | Description |
 |---      |---          |--- |--- |--- |--- |---          |
 | user_id | INT         | X  | X  |    |    | Unique identifier for each user; automatically generated. |
-| user_ip | VARCHAR(15) |    | X  |    |    | The IP address identifying the user. |
+| user_ip | VARCHAR(46) |    | X  |    |    | The IP address identifying the user. |
 
 ## reg_users
 

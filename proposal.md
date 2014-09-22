@@ -57,7 +57,7 @@ The flow of the website will follow the order from above.
 ## Validation
 - Customers will be required to answer a math or CAPTCHA problem to verify that they are human.
 - Customers who have blocked accounts or IP Address(es) will not be able to submit a ticket.
-- Each ticket will have requirements that need to be filled out before it can be submitted. 
+- Each ticket will have requirements that need to be filled out before it can be submitted.
 - Spell check will be built into the website.
 - The website will check each field has the correct data type entered.
 

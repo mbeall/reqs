@@ -1,4 +1,4 @@
-# CIS410 Project 
+# CIS410 Project
 
 ### Project Scope
 Keep in mind that you have a limited amount of time to complete the implementations (about 6 weeks for each). Therefore, plan the scope of your project wisely. Your project doesn’t have to include all the functionalities of a commercial web application. To keep your project manageable and doable, limit your application to about 6 functionalities, 8 pages, and 10 tables.
